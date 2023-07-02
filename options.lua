@@ -1,3 +1,14 @@
+-- Restore cursor shape
+-- augroup RestoreCursorShapeOnExit
+--   autocmd!
+--   autocmd VimLeave * set guicursor=a:hor 20
+-- augroup END
+local restoreCursor = vim.api.nvim_create_augroup("RestoreCursorShapeOnExit", { clear = true })
+vim.api.nvim_create_autocmd("VimLeave", {
+  command = "set guicursor=a:ver25-blinkon1000",
+  group = restoreCursor,
+})
+
 -- set vim options here (vim.<first_key>.<second_key> = value)
 return {
   opt = {

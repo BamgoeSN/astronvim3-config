@@ -29,4 +29,6 @@ return {
       end
     end,
   },
+
+  { "m4xshen/hardtime.nvim", lazy = false, config = function() require("hardtime").setup() end },
 }
