@@ -31,11 +31,12 @@ return {
 
   {
     "rcarriga/nvim-notify",
-    config = function(plugin, opts)
-      require("notify").setup {
-        background_colour = "#000000",
-      }
-    end,
+    opts = { stages = "fade", background_colour = "#3B4252" },
+    -- config = function(plugin, opts)
+    --   require("notify").setup {
+    --     background_colour = "#000000",
+    --   }
+    -- end,
   },
 
   -- You can disable default plugins as follows:
