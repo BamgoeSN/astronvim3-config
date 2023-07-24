@@ -22,7 +22,7 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-    ["<leader>a"] = { 'ggVG"+y<C-o>', desc = "Copy All to Clipboard" },
+    ["<leader>a"] = { 'gg"+yG<C-o>', desc = "Copy All to Clipboard" },
     ["<C-d>"] = { "<C-d>zz" },
     ["<C-u>"] = { "<C-u>zz" },
   },
